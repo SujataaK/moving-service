@@ -166,6 +166,12 @@ html, body{
      color: white;
      margin-top: 180px;
      text-align: center;
+     flex-wrap: wrap;
+}
+.home-container p{
+    font-size: 28px;
+    font-weight: 500;
+    margin: 50px 250px;
 }
 
 .book{
@@ -609,9 +615,7 @@ html, body{
     html {
       font-size: 55%;
     }
-    .header .contact-info {
-      padding: 2rem;
-    }
+
     .navbar {
       padding: 2rem;
     }
@@ -625,8 +629,11 @@ html, body{
         font-size: 50%;
         padding-top: 0px;
     }
-    .main-header, .btn-1, .home-header{
+    .main-header, .btn-1, .home-header, #storage-image{
       display: none;
+    }
+    .logo img{
+        height: 50%;
     }
     .navbar #menu-btn {
       display: inline-block;
@@ -661,9 +668,25 @@ html, body{
       font-size: 2rem;
     }
 
+    .home-container h1{
+        margin: 0;
+        padding: 0;
+    }
+    .home-container p{
+        margin: 0;
+        padding: 20px 0px;
+    }
+    .container{
+        max-width: 100%;
+        flex-direction: column;
+    }
   }
+  
     @media (max-width: 450px) {
       html {
+        font-size: 50%;
+      }
+      h1{
         font-size: 50%;
       }
 
